@@ -1,0 +1,75 @@
+body{
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.action{
+    position: fixed;
+    top: 35%;
+    right: 50%;
+    transform: translateX(50%);
+}
+.profile{
+    width: 80px;
+    height: 80px;
+    
+}
+
+.profile-img{
+     width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.action .menu{
+    position: absolute;
+    top: 120px;
+    right: 0;
+    background: #fff;
+    width: 400px;
+    text-align: right;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all .4s ease-in-out;
+}
+
+.action .menu.active{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.action .menu h2 {
+    text-align: center;
+padding: 20px;
+font-weight: 900;
+
+}
+.action .menu h2 span {
+font-size: 20px;
+}
+
+.action .menu ul {
+padding: 0 20px;
+box-sizing: border-box;
+width: 100%;
+}
+
+.action .menu ul li {
+font-weight: 700;
+padding-bottom: 10px;
+color:rrgb(47, 0, 255);
+}
+.action .menu ul li a {
+text-decoration: none;
+color:rrgb(47, 0, 255);
+}
